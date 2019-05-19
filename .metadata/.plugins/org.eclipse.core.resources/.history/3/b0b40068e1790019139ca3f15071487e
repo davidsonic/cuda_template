@@ -1,0 +1,126 @@
+/*
+ * add_two_arrays.cu
+ *
+ *  Created on: May 19, 2019
+ *      Author: jiali
+ */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <cuda_runtime.h>
+#include <device_launch_parameters.h>
+
+#define gpuArgchk(ans){error_handle(ans, __FILE__, __LINE__);}
+
+inline void error_handle(cudaError_t code, const char *file, int line, bool abort=true){
+	if(code!=cudaSuccess){
+		fprintf(stderr, "Gpuassert: %s %d %d\n", cudaGetErrorString(code), file, line);
+		if(abort)
+			exit(code);
+	}
+}
+
+bool compare_result(int *res_gpu, int *res_cpu, int size){
+	bool ret = true;
+	for(int i=0;i<size;i++)
+		if(res_gpu[i] != res_cpu[i])
+			return false;
+	return ret;
+}
+
+__global__ void calc_add_gpu(int*a, int*b, int*c, int size){
+	int gid = threadIdx.x + blockDim.x * blockIdx.x;
+	if(gid<size)
+		c[gid] = a[gid] + b[gid];
+}
+
+int main(){
+	int size = 128;
+	int byte_size = sizeof(int) * size;
+
+	int *hData_a = (int*)malloc(byte_size);
+	int *hData_b = (int*)malloc(byte_size);
+	int *hData_c = (int*)malloc(byte_size);
+	int *hData_res = (int*)malloc(byte_size);
+
+	//generate data
+	time_t t;
+	srand((unsigned)time(&t));
+	for(int i=0;i<size;i++){
+		hData_a[i] = (int)(rand()%0xff);
+		hData_b[i] = (int)(rand()%0xff);
+	}
+
+
+
+	int *dData_a;
+	gpuArgchk(cudaMalloc((int**)&dData_a, byte_size));
+	gpuArgchk(cudaMemcpy(dData_a, hData_a, byte_size, cudaMemcpyHostToDevice));
+
+	int *dData_b;
+	cudaMalloc((int**)&dData_b, byte_size);
+	time_t gpu_trans_start, gpu_trans_end;
+	gpu_trans_start = clock();
+	cudaMemcpy(dData_b, hData_b, byte_size, cudaMemcpyHostToDevice);
+	gpu_trans_end = clock();
+
+	int *dData_c;
+	cudaMalloc((int**)&dData_c, byte_size);
+
+
+	// CPU operation
+	time_t cpu_start, cpu_end;
+	cpu_start = clock();
+	for(int i=0;i<size;i++){
+		hData_c[i] = hData_a[i] + hData_b[i];
+	}
+	cpu_end = clock();
+
+	//GPU operation
+	dim3 block(64,1,1);
+	dim3 grid(2, 1, 1);
+	time_t gpu_start, gpu_end;
+	gpu_start = clock();
+	calc_add_gpu<< <grid, block>> >(dData_a, dData_b, dData_c, size);
+	gpu_end = clock();
+
+	time_t cpu_trans_start, cpu_trans_end;
+	cpu_trans_start = clock();
+	cudaMemcpy(hData_res, dData_c, byte_size, cudaMemcpyDeviceToHost);
+	cpu_trans_end = clock();
+
+
+	//validity check
+	bool comp = compare_result(hData_res, hData_c, size);
+	if(comp)
+		printf("Comparison result is same\n");
+	else
+		printf("Comparison result is not the same\n");
+
+	cudaDeviceSynchronize();
+
+	//free up memory
+	cudaFree(dData_a);
+	cudaFree(dData_b);
+	cudaFree(dData_c);
+
+	free(hData_a);
+	free(hData_b);
+	free(hData_c);
+
+	//time
+	printf("Time for CPU: %4.6f\n", (double)((double)cpu_start-cpu_end)/CLOCKS_PER_SEC);
+	printf("Time for GPU: %4.6f\n", (double)((double)gpu_start-gpu_end)/CLOCKS_PER_SEC);
+	printf("Time for GPU transfer: %4.6f\n", (double)((double)gpu_trans_start- gpu_trans_end)/CLOCKS_PER_SEC);
+	printf("Time for CPU transfer: %4.6f\n", (double)((double)cpu_trans_start- cpu_trans_end)/CLOCKS_PER_SEC);
+
+	cudaDeviceReset();
+	return 0;
+
+}
+
+
+
+

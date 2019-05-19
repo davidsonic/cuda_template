@@ -1,0 +1,761 @@
+16:07:27 **** Incremental Build of configuration Debug for project first_cuda_app ****
+make all 
+Building target: first_cuda_app
+Invoking: NVCC Linker
+/usr/local/cuda-9.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "first_cuda_app"  ./hello.o   
+./hello.o: In function `main':
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:48: undefined reference to `cuInit'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:49: undefined reference to `cuDeviceGetCount'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:54: undefined reference to `cuDeviceGet'
+makefile:58: recipe for target 'first_cuda_app' failed
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:55: undefined reference to `cuCtxCreate_v2'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:57: undefined reference to `cuModuleLoad'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:58: undefined reference to `cuModuleGetFunction'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:60: undefined reference to `cuMemAlloc_v2'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:61: undefined reference to `cuMemcpyHtoD_v2'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:64: undefined reference to `cuLaunchKernel'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:67: undefined reference to `cuMemcpyDtoH_v2'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:74: undefined reference to `cuMemFree_v2'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:75: undefined reference to `cuCtxDestroy_v2'
+collect2: error: ld returned 1 exit status
+make: *** [first_cuda_app] Error 1
+16:08:19 **** Build of configuration Debug for project first_cuda_app ****
+make all 
+Building target: first_cuda_app
+Invoking: NVCC Linker
+/usr/local/cuda-9.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "first_cuda_app"  ./hello.o   
+./hello.o: In function `main':
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:48: undefined reference to `cuInit'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:49: undefined reference to `cuDeviceGetCount'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:54: undefined reference to `cuDeviceGet'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:55: undefined reference to `cuCtxCreate_v2'
+makefile:58: recipe for target 'first_cuda_app' failed
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:57: undefined reference to `cuModuleLoad'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:58: undefined reference to `cuModuleGetFunction'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:60: undefined reference to `cuMemAlloc_v2'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:61: undefined reference to `cuMemcpyHtoD_v2'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:64: undefined reference to `cuLaunchKernel'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:67: undefined reference to `cuMemcpyDtoH_v2'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:74: undefined reference to `cuMemFree_v2'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:75: undefined reference to `cuCtxDestroy_v2'
+collect2: error: ld returned 1 exit status
+make: *** [first_cuda_app] Error 1
+16:09:23 **** Build of configuration Debug for project first_cuda_app ****
+make all 
+Building target: first_cuda_app
+Invoking: NVCC Linker
+/usr/local/cuda-9.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "first_cuda_app"  ./hello.o   
+./hello.o: In function `main':
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:48: undefined reference to `cuInit'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:49: undefined reference to `cuDeviceGetCount'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:54: undefined reference to `cuDeviceGet'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:55: undefined reference to `cuCtxCreate_v2'
+makefile:58: recipe for target 'first_cuda_app' failed
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:57: undefined reference to `cuModuleLoad'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:58: undefined reference to `cuModuleGetFunction'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:60: undefined reference to `cuMemAlloc_v2'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:61: undefined reference to `cuMemcpyHtoD_v2'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:64: undefined reference to `cuLaunchKernel'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:67: undefined reference to `cuMemcpyDtoH_v2'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:74: undefined reference to `cuMemFree_v2'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:75: undefined reference to `cuCtxDestroy_v2'
+collect2: error: ld returned 1 exit status
+make: *** [first_cuda_app] Error 1
+16:15:06 **** Build of configuration Debug for project first_cuda_appp ****
+make all 
+Building file: ../src/first_cuda_appp.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "src" -M -o "src/first_cuda_appp.d" "../src/first_cuda_appp.cu"
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "src/first_cuda_appp.o" "../src/first_cuda_appp.cu"
+Finished building: ../src/first_cuda_appp.cu
+ 
+Building target: first_cuda_appp
+Invoking: NVCC Linker
+/usr/local/cuda-9.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "first_cuda_appp"  ./src/first_cuda_appp.o   
+Finished building target: first_cuda_appp
+ 
+16:15:19 **** Incremental Build of configuration Debug for project first_cuda_appp ****
+make all 
+Building file: ../src/first_cuda_appp.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "src" -M -o "src/first_cuda_appp.d" "../src/first_cuda_appp.cu"
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "src/first_cuda_appp.o" "../src/first_cuda_appp.cu"
+../src/first_cuda_appp.cu(9): error: expected an expression
+
+../src/first_cuda_appp.cu(9): error: expected an expression
+
+../src/first_cuda_appp.cu(9): error: expected a ">>>"
+
+../src/first_cuda_appp.cu(9): error: expected a "("
+
+../src/first_cuda_appp.cu(10): error: expected a ")"
+
+../src/first_cuda_appp.cu(10): error: too many arguments in function call
+
+6 errors detected in the compilation of "/tmp/tmpxft_000038ce_00000000-6_first_cuda_appp.cpp1.ii".
+src/subdir.mk:18: recipe for target 'src/first_cuda_appp.o' failed
+make: *** [src/first_cuda_appp.o] Error 1
+16:15:39 **** Incremental Build of configuration Debug for project first_cuda_appp ****
+make all 
+Building file: ../src/first_cuda_appp.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "src" -M -o "src/first_cuda_appp.d" "../src/first_cuda_appp.cu"
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "src/first_cuda_appp.o" "../src/first_cuda_appp.cu"
+Finished building: ../src/first_cuda_appp.cu
+ 
+Building target: first_cuda_appp
+Invoking: NVCC Linker
+/usr/local/cuda-9.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "first_cuda_appp"  ./src/first_cuda_appp.o   
+Finished building target: first_cuda_appp
+ 
+02:00:52 **** Build of configuration Debug for project first_cuda_appp ****
+make all 
+make: Nothing to be done for 'all'.
+14:09:48 **** Build of configuration Debug for project first_cuda_appp ****
+make all 
+Building file: ../src/first_cuda_appp.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "src" -M -o "src/first_cuda_appp.d" "../src/first_cuda_appp.cu"
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "src/first_cuda_appp.o" "../src/first_cuda_appp.cu"
+../src/first_cuda_appp.cu(6): error: identifier "print" is undefined
+
+../src/first_cuda_appp.cu(6): error: expected a ";"
+
+../src/first_cuda_appp.cu(11): error: identifier "hello_world" is undefined
+
+3 errors detected in the compilation of "/tmp/tmpxft_0000646b_00000000-6_first_cuda_appp.cpp1.ii".
+make: *** [src/first_cuda_appp.o] Error 1
+src/subdir.mk:18: recipe for target 'src/first_cuda_appp.o' failed
+14:10:08 **** Incremental Build of configuration Debug for project first_cuda_appp ****
+make all 
+Building file: ../src/first_cuda_appp.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "src" -M -o "src/first_cuda_appp.d" "../src/first_cuda_appp.cu"
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "src/first_cuda_appp.o" "../src/first_cuda_appp.cu"
+../src/first_cuda_appp.cu(6): error: expected a ";"
+
+../src/first_cuda_appp.cu(11): error: identifier "hello_world" is undefined
+
+2 errors detected in the compilation of "/tmp/tmpxft_000064c4_00000000-6_first_cuda_appp.cpp1.ii".
+src/subdir.mk:18: recipe for target 'src/first_cuda_appp.o' failed
+make: *** [src/first_cuda_appp.o] Error 1
+14:11:02 **** Incremental Build of configuration Debug for project first_cuda_appp ****
+make all 
+Building file: ../src/first_cuda_appp.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "src" -M -o "src/first_cuda_appp.d" "../src/first_cuda_appp.cu"
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "src/first_cuda_appp.o" "../src/first_cuda_appp.cu"
+../src/first_cuda_appp.cu(11): error: identifier "hello_world" is undefined
+
+../src/first_cuda_appp.cu(11): error: expected an expression
+
+2 errors detected in the compilation of "/tmp/tmpxft_0000653a_00000000-6_first_cuda_appp.cpp1.ii".
+src/subdir.mk:18: recipe for target 'src/first_cuda_appp.o' failed
+make: *** [src/first_cuda_appp.o] Error 1
+14:11:27 **** Incremental Build of configuration Debug for project first_cuda_appp ****
+make all 
+Building file: ../src/first_cuda_appp.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "src" -M -o "src/first_cuda_appp.d" "../src/first_cuda_appp.cu"
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "src/first_cuda_appp.o" "../src/first_cuda_appp.cu"
+../src/first_cuda_appp.cu(11): error: expected an expression
+
+1 error detected in the compilation of "/tmp/tmpxft_00006594_00000000-6_first_cuda_appp.cpp1.ii".
+make: *** [src/first_cuda_appp.o] Error 1
+src/subdir.mk:18: recipe for target 'src/first_cuda_appp.o' failed
+14:11:50 **** Incremental Build of configuration Debug for project first_cuda_appp ****
+make all 
+Building file: ../src/first_cuda_appp.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "src" -M -o "src/first_cuda_appp.d" "../src/first_cuda_appp.cu"
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "src/first_cuda_appp.o" "../src/first_cuda_appp.cu"
+Finished building: ../src/first_cuda_appp.cu
+ 
+Building target: first_cuda_appp
+Invoking: NVCC Linker
+/usr/local/cuda-9.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "first_cuda_appp"  ./src/first_cuda_appp.o   
+Finished building target: first_cuda_appp
+ 
+02:14:24 **** Build of configuration Debug for project first_cuda_appp ****
+make all 
+Building file: ../src/first_cuda_appp.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "src" -M -o "src/first_cuda_appp.d" "../src/first_cuda_appp.cu"
+/usr/local/cuda-9.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "src/first_cuda_appp.o" "../src/first_cuda_appp.cu"
+Finished building: ../src/first_cuda_appp.cu
+ 
+Building target: first_cuda_appp
+Invoking: NVCC Linker
+/usr/local/cuda-9.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "first_cuda_appp"  ./src/first_cuda_appp.o   
+Finished building target: first_cuda_appp
+ 
+07:35:27 **** Build of configuration Debug for project first_cuda_appp ****
+make all 
+make: Nothing to be done for 'all'.
+07:36:23 **** Build of configuration Debug for project calc_index_3d ****
+make all 
+Building file: ../main.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "main.d" "../main.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "main.o" "../main.cu"
+Finished building: ../main.cu
+ 
+Building target: calc_index_3d
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_index_3d"  ./main.o   
+./main.o: In function `main':
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:48: undefined reference to `cuInit'
+makefile:58: recipe for target 'calc_index_3d' failed
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:49: undefined reference to `cuDeviceGetCount'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:54: undefined reference to `cuDeviceGet'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:55: undefined reference to `cuCtxCreate_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:57: undefined reference to `cuModuleLoad'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:58: undefined reference to `cuModuleGetFunction'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:60: undefined reference to `cuMemAlloc_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:61: undefined reference to `cuMemcpyHtoD_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:64: undefined reference to `cuLaunchKernel'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:67: undefined reference to `cuMemcpyDtoH_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:74: undefined reference to `cuMemFree_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:75: undefined reference to `cuCtxDestroy_v2'
+collect2: error: ld returned 1 exit status
+make: *** [calc_index_3d] Error 1
+07:37:04 **** Build of configuration Debug for project calc_index_3d ****
+make all 
+Building file: ../src/main.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "src" -M -o "src/main.d" "../src/main.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "src/main.o" "../src/main.cu"
+Finished building: ../src/main.cu
+ 
+Building target: calc_index_3d
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_index_3d"  ./main.o  ./src/main.o   
+./src/main.o: In function `main':
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:33: multiple definition of `main'
+./main.o:/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:33: first defined here
+./main.o: In function `main':
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:48: undefined reference to `cuInit'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:49: undefined reference to `cuDeviceGetCount'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:54: undefined reference to `cuDeviceGet'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:55: undefined reference to `cuCtxCreate_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:57: undefined reference to `cuModuleLoad'
+makefile:59: recipe for target 'calc_index_3d' failed
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:58: undefined reference to `cuModuleGetFunction'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:60: undefined reference to `cuMemAlloc_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:61: undefined reference to `cuMemcpyHtoD_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:64: undefined reference to `cuLaunchKernel'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:67: undefined reference to `cuMemcpyDtoH_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:74: undefined reference to `cuMemFree_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:75: undefined reference to `cuCtxDestroy_v2'
+./src/main.o: In function `main':
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:48: undefined reference to `cuInit'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:49: undefined reference to `cuDeviceGetCount'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:54: undefined reference to `cuDeviceGet'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:55: undefined reference to `cuCtxCreate_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:57: undefined reference to `cuModuleLoad'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:58: undefined reference to `cuModuleGetFunction'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:60: undefined reference to `cuMemAlloc_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:61: undefined reference to `cuMemcpyHtoD_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:64: undefined reference to `cuLaunchKernel'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:67: undefined reference to `cuMemcpyDtoH_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:74: undefined reference to `cuMemFree_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:75: undefined reference to `cuCtxDestroy_v2'
+collect2: error: ld returned 1 exit status
+make: *** [calc_index_3d] Error 1
+07:43:52 **** Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../hello.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "hello.d" "../hello.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "hello.o" "../hello.cu"
+Finished building: ../hello.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./hello.o   
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+makefile:58: recipe for target 'calc_3d_index' failed
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [calc_3d_index] Error 1
+07:44:59 **** Build of configuration Debug for project calc_3d_index ****
+make all 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./hello.o   
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+makefile:58: recipe for target 'calc_3d_index' failed
+make: *** [calc_3d_index] Error 1
+07:45:12 **** Build of configuration Debug for project calc_3d_index ****
+make all 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./hello.o   
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+makefile:58: recipe for target 'calc_3d_index' failed
+make: *** [calc_3d_index] Error 1
+07:46:08 **** Build of configuration Debug for project calc_3d_index ****
+make all 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./hello.o   
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [calc_3d_index] Error 1
+makefile:58: recipe for target 'calc_3d_index' failed
+07:46:33 **** Build of configuration Debug for project calc_3d_index ****
+make all 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./hello.o   
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+makefile:58: recipe for target 'calc_3d_index' failed
+make: *** [calc_3d_index] Error 1
+07:47:01 **** Incremental Build of configuration Debug for project first_cuda_appp ****
+make all 
+make: Nothing to be done for 'all'.
+07:47:05 **** Incremental Build of configuration Debug for project first_cuda_appp ****
+make all 
+make: Nothing to be done for 'all'.
+07:47:09 **** Incremental Build of configuration Debug for project first_cuda_appp ****
+make all 
+make: Nothing to be done for 'all'.
+07:49:03 **** Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../hello.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "hello.d" "../hello.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "hello.o" "../hello.cu"
+Finished building: ../hello.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./hello.o   
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+makefile:58: recipe for target 'calc_3d_index' failed
+make: *** [calc_3d_index] Error 1
+07:49:33 **** Build of configuration Debug for project calc_3d_index ****
+make all 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./hello.o   
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+makefile:58: recipe for target 'calc_3d_index' failed
+make: *** [calc_3d_index] Error 1
+07:49:46 **** Incremental Build of configuration Debug for project first_cuda_appp ****
+make all 
+make: Nothing to be done for 'all'.
+07:50:06 **** Incremental Build of configuration Debug for project first_cuda_appp ****
+make all 
+make: Nothing to be done for 'all'.
+07:50:22 **** Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../hello.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "hello.d" "../hello.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "hello.o" "../hello.cu"
+Finished building: ../hello.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./hello.o   
+Finished building target: calc_3d_index
+ 
+07:50:32 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+make: Nothing to be done for 'all'.
+07:51:03 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../hello.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "hello.d" "../hello.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "hello.o" "../hello.cu"
+Finished building: ../hello.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./hello.o   
+Finished building target: calc_3d_index
+ 
+07:51:13 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+make: Nothing to be done for 'all'.
+07:51:42 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../hello.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "hello.d" "../hello.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "hello.o" "../hello.cu"
+Finished building: ../hello.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./hello.o   
+Finished building target: calc_3d_index
+ 
+08:10:47 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../hello.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "hello.d" "../hello.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "hello.o" "../hello.cu"
+../hello.cu(34): warning: conversion from pointer to smaller integer
+
+../hello.cu(34): warning: conversion from pointer to smaller integer
+
+../hello.cu: In function ‘int main()’:
+../hello.cu:34:23: error: cast from ‘time_t* {aka long int*}’ to ‘unsigned int’ loses precision [-fpermissive]
+  srand((unsigned)&time);
+                       ^
+make: *** [hello.o] Error 1
+subdir.mk:18: recipe for target 'hello.o' failed
+08:11:26 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../hello.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "hello.d" "../hello.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "hello.o" "../hello.cu"
+../hello.cu(34): warning: conversion from pointer to smaller integer
+
+../hello.cu(34): warning: conversion from pointer to smaller integer
+
+../hello.cu: In function ‘int main()’:
+../hello.cu:34:23: error: cast from ‘time_t* {aka long int*}’ to ‘unsigned int’ loses precision [-fpermissive]
+  srand((unsigned)&time);
+                       ^
+subdir.mk:18: recipe for target 'hello.o' failed
+make: *** [hello.o] Error 1
+08:12:08 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../hello.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "hello.d" "../hello.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "hello.o" "../hello.cu"
+../hello.cu(34): warning: variable "time" is used before its value is set
+
+../hello.cu(34): warning: variable "time" is used before its value is set
+
+Finished building: ../hello.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./hello.o   
+Finished building target: calc_3d_index
+ 
+08:15:37 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../hello.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "hello.d" "../hello.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "hello.o" "../hello.cu"
+../hello.cu(33): warning: variable "time" is used before its value is set
+
+../hello.cu(33): warning: variable "time" is used before its value is set
+
+Finished building: ../hello.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./hello.o   
+Finished building target: calc_3d_index
+ 
+08:17:41 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../hello.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "hello.d" "../hello.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "hello.o" "../hello.cu"
+../hello.cu(33): warning: variable "time" is used before its value is set
+
+../hello.cu(33): warning: variable "time" is used before its value is set
+
+Finished building: ../hello.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./hello.o   
+Finished building target: calc_3d_index
+ 
+08:18:33 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../hello.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "hello.d" "../hello.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "hello.o" "../hello.cu"
+../hello.cu(33): warning: variable "time" is used before its value is set
+
+../hello.cu(33): warning: variable "time" is used before its value is set
+
+Finished building: ../hello.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./hello.o   
+Finished building target: calc_3d_index
+ 
+08:23:12 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../hello.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "hello.d" "../hello.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "hello.o" "../hello.cu"
+../hello.cu(33): warning: variable "time" is used before its value is set
+
+../hello.cu(33): warning: variable "time" is used before its value is set
+
+Finished building: ../hello.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./hello.o   
+Finished building target: calc_3d_index
+ 
+08:25:58 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../hello.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "hello.d" "../hello.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "hello.o" "../hello.cu"
+../hello.cu(33): warning: variable "time" is used before its value is set
+
+../hello.cu(33): warning: variable "time" is used before its value is set
+
+Finished building: ../hello.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./hello.o   
+Finished building target: calc_3d_index
+ 
+08:42:11 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../calc_3d_unique.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "calc_3d_unique.d" "../calc_3d_unique.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "calc_3d_unique.o" "../calc_3d_unique.cu"
+../calc_3d_unique.cu(38): error: identifier "byte_size" is undefined
+
+../calc_3d_unique.cu(42): warning: variable "time" is used before its value is set
+
+../calc_3d_unique.cu(49): error: too few arguments in function call
+
+2 errors detected in the compilation of "/tmp/tmpxft_00006dc5_00000000-7_calc_3d_unique.cpp1.ii".
+make: *** [calc_3d_unique.o] Error 2
+subdir.mk:21: recipe for target 'calc_3d_unique.o' failed
+08:42:38 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../calc_3d_unique.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "calc_3d_unique.d" "../calc_3d_unique.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "calc_3d_unique.o" "../calc_3d_unique.cu"
+../calc_3d_unique.cu(42): warning: variable "time" is used before its value is set
+
+../calc_3d_unique.cu(49): error: too few arguments in function call
+
+1 error detected in the compilation of "/tmp/tmpxft_00006e3f_00000000-7_calc_3d_unique.cpp1.ii".
+subdir.mk:21: recipe for target 'calc_3d_unique.o' failed
+make: *** [calc_3d_unique.o] Error 2
+08:43:27 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../calc_3d_unique.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "calc_3d_unique.d" "../calc_3d_unique.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "calc_3d_unique.o" "../calc_3d_unique.cu"
+../calc_3d_unique.cu(42): warning: variable "time" is used before its value is set
+
+../calc_3d_unique.cu(42): warning: variable "time" is used before its value is set
+
+Finished building: ../calc_3d_unique.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./calc_3d_unique.o ./hello.o   
+./hello.o: In function `main':
+/home/jiali/cuda-workspace/calc_3d_index/Debug/../hello.cu:27: multiple definition of `main'
+./calc_3d_unique.o:/home/jiali/cuda-workspace/calc_3d_index/Debug/../calc_3d_unique.cu:36: first defined here
+makefile:58: recipe for target 'calc_3d_index' failed
+./hello.o: In function `calc_index(int*, int)':
+/home/jiali/cuda-workspace/calc_3d_index/Debug/../hello.cu:11: multiple definition of `calc_index(int*, int)'
+./calc_3d_unique.o:/home/jiali/cuda-workspace/calc_3d_index/Debug/../calc_3d_unique.cu:17: first defined here
+./hello.o: In function `__device_stub__Z10calc_indexPii(int*, int)':
+/tmp/tmpxft_00006904_00000000-4_hello.cudafe1.stub.c:10: multiple definition of `__device_stub__Z10calc_indexPii(int*, int)'
+./calc_3d_unique.o:/tmp/tmpxft_00006ebb_00000000-4_calc_3d_unique.cudafe1.stub.c:10: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [calc_3d_index] Error 1
+08:44:09 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../hello.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "hello.d" "../hello.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "hello.o" "../hello.cu"
+../hello.cu(33): warning: variable "time" is used before its value is set
+
+../hello.cu(33): warning: variable "time" is used before its value is set
+
+Finished building: ../hello.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./calc_3d_unique.o ./hello.o   
+./hello.o: In function `main':
+/home/jiali/cuda-workspace/calc_3d_index/Debug/../hello.cu:27: multiple definition of `main'
+./calc_3d_unique.o:/home/jiali/cuda-workspace/calc_3d_index/Debug/../calc_3d_unique.cu:36: first defined here
+collect2: error: ld returned 1 exit status
+makefile:58: recipe for target 'calc_3d_index' failed
+make: *** [calc_3d_index] Error 1
+08:44:44 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../hello.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "hello.d" "../hello.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "hello.o" "../hello.cu"
+../hello.cu(33): warning: variable "time" is used before its value is set
+
+../hello.cu(33): warning: variable "time" is used before its value is set
+
+Finished building: ../hello.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./calc_3d_unique.o ./hello.o   
+Finished building target: calc_3d_index
+ 
+08:46:01 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+make: Nothing to be done for 'all'.
+08:46:37 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../calc_3d_unique.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "calc_3d_unique.d" "../calc_3d_unique.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "calc_3d_unique.o" "../calc_3d_unique.cu"
+../calc_3d_unique.cu(42): warning: variable "time" is used before its value is set
+
+../calc_3d_unique.cu(42): warning: variable "time" is used before its value is set
+
+Finished building: ../calc_3d_unique.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./calc_3d_unique.o ./hello.o   
+Finished building target: calc_3d_index
+ 
+09:26:21 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../calc_3d_unique.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "calc_3d_unique.d" "../calc_3d_unique.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "calc_3d_unique.o" "../calc_3d_unique.cu"
+../calc_3d_unique.cu(42): warning: variable "time" is used before its value is set
+
+../calc_3d_unique.cu(42): warning: variable "time" is used before its value is set
+
+Finished building: ../calc_3d_unique.cu
+ 
+Building file: ../add_two_arrays.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "add_two_arrays.d" "../add_two_arrays.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "add_two_arrays.o" "../add_two_arrays.cu"
+../add_two_arrays.cu(40): error: no instance of overloaded function "cudaMalloc" matches the argument list
+            argument types are: (int *, int)
+
+../add_two_arrays.cu(44): error: no instance of overloaded function "cudaMalloc" matches the argument list
+            argument types are: (int *, int)
+
+../add_two_arrays.cu(48): error: no instance of overloaded function "cudaMalloc" matches the argument list
+            argument types are: (int *, int)
+
+../add_two_arrays.cu(64): error: too few arguments in function call
+
+4 errors detected in the compilation of "/tmp/tmpxft_00007b00_00000000-7_add_two_arrays.cpp1.ii".
+make: *** [add_two_arrays.o] Error 2
+subdir.mk:24: recipe for target 'add_two_arrays.o' failed
+09:50:46 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../add_two_arrays.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "add_two_arrays.d" "../add_two_arrays.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "add_two_arrays.o" "../add_two_arrays.cu"
+Finished building: ../add_two_arrays.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./add_two_arrays.o ./calc_3d_unique.o ./hello.o   
+Finished building target: calc_3d_index
+ 
+10:47:52 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../add_two_arrays.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "add_two_arrays.d" "../add_two_arrays.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "add_two_arrays.o" "../add_two_arrays.cu"
+../add_two_arrays.cu(18): error: no operator "!=" matches these operands
+            operand types are: cudaError_t * != cudaError
+
+../add_two_arrays.cu(19): error: argument of type "cudaError_t *" is incompatible with parameter of type "cudaError_t"
+
+../add_two_arrays.cu(21): error: argument of type "cudaError_t *" is incompatible with parameter of type "int"
+
+../add_two_arrays.cu(59): error: argument of type "cudaError_t" is incompatible with parameter of type "cudaError_t *"
+
+../add_two_arrays.cu(60): error: identifier "grpuArgchk" is undefined
+
+5 errors detected in the compilation of "/tmp/tmpxft_00000e2b_00000000-7_add_two_arrays.cpp1.ii".
+make: *** [add_two_arrays.o] Error 2
+subdir.mk:24: recipe for target 'add_two_arrays.o' failed
+10:48:33 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../add_two_arrays.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "add_two_arrays.d" "../add_two_arrays.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "add_two_arrays.o" "../add_two_arrays.cu"
+../add_two_arrays.cu(60): error: identifier "grpuArgchk" is undefined
+
+1 error detected in the compilation of "/tmp/tmpxft_00000f79_00000000-7_add_two_arrays.cpp1.ii".
+subdir.mk:24: recipe for target 'add_two_arrays.o' failed
+make: *** [add_two_arrays.o] Error 2
+10:48:53 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../add_two_arrays.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "add_two_arrays.d" "../add_two_arrays.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "add_two_arrays.o" "../add_two_arrays.cu"
+../add_two_arrays.cu: In function ‘void error_handle(cudaError_t, const char*, int, bool)’:
+../add_two_arrays.cu:19:78: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘const char*’ [-Wformat=]
+   fprintf(stderr, "Gpuassert: %s %d %d\n", cudaGetErrorString(code), file, line);
+                                                                              ^
+Finished building: ../add_two_arrays.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./add_two_arrays.o ./calc_3d_unique.o ./hello.o   
+Finished building target: calc_3d_index
+ 
+10:53:55 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../add_two_arrays.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "add_two_arrays.d" "../add_two_arrays.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "add_two_arrays.o" "../add_two_arrays.cu"
+../add_two_arrays.cu: In function ‘void error_handle(cudaError_t, const char*, int, bool)’:
+../add_two_arrays.cu:19:78: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘const char*’ [-Wformat=]
+   fprintf(stderr, "Gpuassert: %s %d %d\n", cudaGetErrorString(code), file, line);
+                                                                              ^
+Finished building: ../add_two_arrays.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./add_two_arrays.o ./calc_3d_unique.o ./hello.o   
+Finished building target: calc_3d_index
+ 

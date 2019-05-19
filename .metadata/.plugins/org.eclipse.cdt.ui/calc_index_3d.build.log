@@ -1,0 +1,46 @@
+07:37:04 **** Build of configuration Debug for project calc_index_3d ****
+make all 
+Building file: ../src/main.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "src" -M -o "src/main.d" "../src/main.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "src/main.o" "../src/main.cu"
+Finished building: ../src/main.cu
+ 
+Building target: calc_index_3d
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_index_3d"  ./main.o  ./src/main.o   
+./src/main.o: In function `main':
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:33: multiple definition of `main'
+./main.o:/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:33: first defined here
+./main.o: In function `main':
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:48: undefined reference to `cuInit'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:49: undefined reference to `cuDeviceGetCount'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:54: undefined reference to `cuDeviceGet'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:55: undefined reference to `cuCtxCreate_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:57: undefined reference to `cuModuleLoad'
+makefile:59: recipe for target 'calc_index_3d' failed
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:58: undefined reference to `cuModuleGetFunction'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:60: undefined reference to `cuMemAlloc_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:61: undefined reference to `cuMemcpyHtoD_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:64: undefined reference to `cuLaunchKernel'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:67: undefined reference to `cuMemcpyDtoH_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:74: undefined reference to `cuMemFree_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../main.cu:75: undefined reference to `cuCtxDestroy_v2'
+./src/main.o: In function `main':
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:48: undefined reference to `cuInit'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:49: undefined reference to `cuDeviceGetCount'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:54: undefined reference to `cuDeviceGet'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:55: undefined reference to `cuCtxCreate_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:57: undefined reference to `cuModuleLoad'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:58: undefined reference to `cuModuleGetFunction'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:60: undefined reference to `cuMemAlloc_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:61: undefined reference to `cuMemcpyHtoD_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:64: undefined reference to `cuLaunchKernel'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:67: undefined reference to `cuMemcpyDtoH_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:74: undefined reference to `cuMemFree_v2'
+/home/jiali/cuda-workspace/calc_index_3d/Debug/../src/main.cu:75: undefined reference to `cuCtxDestroy_v2'
+collect2: error: ld returned 1 exit status
+make: *** [calc_index_3d] Error 1
+
+07:37:10 Build Finished (took 5s.957ms)
+

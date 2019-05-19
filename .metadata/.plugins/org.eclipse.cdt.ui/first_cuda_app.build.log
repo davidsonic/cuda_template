@@ -1,0 +1,24 @@
+16:09:23 **** Build of configuration Debug for project first_cuda_app ****
+make all 
+Building target: first_cuda_app
+Invoking: NVCC Linker
+/usr/local/cuda-9.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "first_cuda_app"  ./hello.o   
+./hello.o: In function `main':
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:48: undefined reference to `cuInit'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:49: undefined reference to `cuDeviceGetCount'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:54: undefined reference to `cuDeviceGet'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:55: undefined reference to `cuCtxCreate_v2'
+makefile:58: recipe for target 'first_cuda_app' failed
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:57: undefined reference to `cuModuleLoad'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:58: undefined reference to `cuModuleGetFunction'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:60: undefined reference to `cuMemAlloc_v2'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:61: undefined reference to `cuMemcpyHtoD_v2'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:64: undefined reference to `cuLaunchKernel'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:67: undefined reference to `cuMemcpyDtoH_v2'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:74: undefined reference to `cuMemFree_v2'
+/home/jiali/cuda-workspace/first_cuda_app/Debug/../hello.cu:75: undefined reference to `cuCtxDestroy_v2'
+collect2: error: ld returned 1 exit status
+make: *** [first_cuda_app] Error 1
+
+16:09:24 Build Finished (took 930ms)
+

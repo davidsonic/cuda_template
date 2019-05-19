@@ -1,0 +1,12 @@
+#include <iostream>
+#include <stdio.h>
+
+__global__ void myKernel(){
+	
+}
+
+int main(){
+	myKernel<< <1,1>> >();
+	printf("hello world\n");
+	return 0;
+}

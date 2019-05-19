@@ -1,0 +1,20 @@
+10:53:55 **** Incremental Build of configuration Debug for project calc_3d_index ****
+make all 
+Building file: ../add_two_arrays.cu
+Invoking: NVCC Compiler
+/usr/bin/nvcc -G -g -O0 -gencode arch=compute_20,code=sm_20  -odir "." -M -o "add_two_arrays.d" "../add_two_arrays.cu"
+/usr/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20  -x cu -o  "add_two_arrays.o" "../add_two_arrays.cu"
+../add_two_arrays.cu: In function ‘void error_handle(cudaError_t, const char*, int, bool)’:
+../add_two_arrays.cu:19:78: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘const char*’ [-Wformat=]
+   fprintf(stderr, "Gpuassert: %s %d %d\n", cudaGetErrorString(code), file, line);
+                                                                              ^
+Finished building: ../add_two_arrays.cu
+ 
+Building target: calc_3d_index
+Invoking: NVCC Linker
+/usr/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_20,code=compute_20 -gencode arch=compute_20,code=sm_20 -link -o  "calc_3d_index"  ./add_two_arrays.o ./calc_3d_unique.o ./hello.o   
+Finished building target: calc_3d_index
+ 
+
+10:54:01 Build Finished (took 6s.311ms)
+

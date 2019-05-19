@@ -1,0 +1,15 @@
+#include "cuda_runtime.h"
+#include "device_launch_parameters.h"
+#include <stdio.h>
+
+__global__ void hello_cuda(){
+	print("hello cuda\n"):
+
+}
+
+int main(){
+	hello_world<< <1,1>> >();
+	cudaDeviceSynchronize();
+	cudaDeviceReset();
+	return 0;
+}

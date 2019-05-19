@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;first_cuda_appp&apos;" deleteContents="false" description="Delete resource &apos;first_cuda_appp&apos;" element1="/first_cuda_appp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1558224682944"/>&#x0A;<refactoring comment="Delete resource &apos;calc_3d_index/add_two_arrays&apos;" deleteContents="false" description="Delete resource &apos;calc_3d_index/add_two_arrays&apos;" element1="/calc_3d_index/add_two_arrays" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1558228359939"/>
+</session>
